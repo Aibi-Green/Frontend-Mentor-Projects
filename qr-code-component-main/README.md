@@ -21,8 +21,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [github folder](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/qr-code-component-main)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [github repository](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/qr-code-component-main)
+- Live Site URL: [live site](qr-code-component-main-ivydev.netlify.app)
 
 ## My process
 
@@ -43,15 +43,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
 ### Continued development
 
-- Find a better way to adjust img size according to div width (padding does not reduce an image's size)
+- Find a better way to adjust image size according to div width (padding does not reduce an image's size)
 
 ### Useful resources
 
