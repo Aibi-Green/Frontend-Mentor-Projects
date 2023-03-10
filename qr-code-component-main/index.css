@@ -1,0 +1,56 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    color: hsl(218, 44%, 22%);
+    font-family: 'Outfit', sans-serif;
+    /* set position to relative to enable absolute positioning for child elements*/
+    position: relative;
+    /* sets height to current window height of window tab */
+    height: 100vh;
+    /* removes default margin given to body element */
+    margin: 0;
+}
+
+.qr-card {
+    background-color: white;
+    /* eyeballed the size of image */
+    width: 300px;
+    /* wraps the div height around the total added height of the child elements */
+    height: auto;
+    /* rounded corners */
+    border-radius: 15px;
+    /* aligns both text and img to the center */
+    text-align: center;
+    /* puts shadow
+        1st argument x axis offset
+        2nd argument y axis offset
+        3rd argument sets radius of blur
+        last color of shadow */
+    box-shadow: 0px 10px 20px hsla(219, 15%, 55%, 0.171);
+    /* set position to absolute to use top and left properties */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* offsets the x and y axis to the center of the element */
+    transform: translate(-50%, -50%);
+}
+
+.qr-img {
+    /* !!! find a better way to adjust img according to div width */
+    width: 273px;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.qr-details {
+    padding: 0px 30px 20px 30px;
+}
+
+.heading  {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.info{
+    font-size: 0.9em;
+    color: hsl(220, 15%, 55%);
+}
