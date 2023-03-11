@@ -52,7 +52,7 @@ body {
 }
 ```
 
--- Image size adjusting to container size
+- Image size adjusting to container size
 ```css
 container {
   width: 100%;
@@ -67,7 +67,7 @@ img {
 
 ### Continued development
 
-- Find a better way to adjust image size according to div width (padding does not reduce an image's size)
+- ~~Find a better way to adjust image size according to div width (padding does not reduce an image's size)~~
 
 ### Useful resources
 
