@@ -33,13 +33,35 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-- Vertical align using transform and absolute position
+- ~~Vertical align using transform and absolute position~~
 ```css
 .qr-card {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+```
+
+- Use display flex for center aligning
+```css
+body {
+  position: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+
+-- Image size adjusting to container size
+```css
+container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
 }
 ```
 
