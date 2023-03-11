@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![results summary component](screenshots/results summary component.png)
+![results summary component](screenshots/results-summary-component.png.png)
 
 ### Links
 
