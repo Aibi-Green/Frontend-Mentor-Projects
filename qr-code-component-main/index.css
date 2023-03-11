@@ -2,10 +2,13 @@ body {
     background-color: hsl(212, 45%, 89%);
     color: hsl(218, 44%, 22%);
     font-family: 'Outfit', sans-serif;
-    /* set position to relative to enable absolute positioning for child elements*/
-    position: relative;
+    /* updated: position of relative replaced with display: flex
+                to avoid using absolute property for card div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* sets height to current window height of window tab */
-    height: 100vh;
+    min-height: 100vh;
     /* removes default margin given to body element */
     margin: 0;
 }
@@ -14,8 +17,9 @@ body {
     background-color: white;
     /* eyeballed the size of image */
     width: 300px;
-    /* wraps the div height around the total added height of the child elements */
-    height: auto;
+    /* update: height: auto removed since align-item property
+                automatically adjusts height according to children 
+                element total height */
     /* rounded corners */
     border-radius: 15px;
     /* aligns both text and img to the center */
@@ -27,18 +31,24 @@ body {
         last color of shadow */
     box-shadow: 0px 10px 20px hsla(219, 15%, 55%, 0.171);
     /* set position to absolute to use top and left properties */
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; */
     /* offsets the x and y axis to the center of the element */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+}
+
+.img-container {
+    width: 100%;
+    padding: 12px 12px 0 12px;
+
+    /* prevent img from going beyond its conainers borders */
+    box-sizing: border-box;
 }
 
 .qr-img {
-    /* !!! find a better way to adjust img according to div width */
-    width: 273px;
-    margin-top: 12px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .qr-details {
