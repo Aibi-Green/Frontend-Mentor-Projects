@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github repository](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/results-summary-component-main)
-- Live Site URL: [Add live site URL here](https://results-summary-componenet-ivydev.netlify.app/)
+- Live Site URL: [live site](https://results-summary-componenet-ivydev.netlify.app/)
 
 ## My process
 
