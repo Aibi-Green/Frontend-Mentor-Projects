@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://product-preview-card-ivydev.netlify.app/)
 
 ## My process
 
