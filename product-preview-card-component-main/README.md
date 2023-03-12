@@ -11,7 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [Questions](#questions)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -45,18 +45,13 @@ Users should be able to:
 - HTML
 - CSS
 
-### What I learned
+### Questions
 
-
-
-### Continued development
-
-
+- I can't make the [div container](./screenshots/ss1.png) be the same height as its [div container](./screenshots/ss2.png).
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) by Zach Goller](https://www.youtube.com/watch?v=zJSY8tbf_ys) - Helped me understand the basic css properties along with examples and challenges that made it easy for me to understand style and layout concepts such as flex.
 
 ## Author
 
