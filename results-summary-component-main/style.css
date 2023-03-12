@@ -1,149 +1,130 @@
-body {
-    position: relative;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
     font-size: 18px;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-footer {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
+main {
+    min-height: inherit;
 }
-
-
-
-/* WHOLE CARD */
 
 .card {
     background-color: white;
-    box-shadow: 10px 20px 45px hsl(221, 100%, 96%);
-    border-radius: 30px;
-
-    /* centers card */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    /* aligns content horizontally */
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
-.results, .summaries {
-    width: 326px;
-    height: 453px;
-
-    /* prevents card from getting wider when using padding */
-    box-sizing: border-box;
-}
-
-
-
-/* RESULT SIDE */
 .results {
     background-image: linear-gradient(
         hsl(252, 100%, 67%),
         hsl(241, 81%, 54%));
-    border-radius: 30px;
+    border-radius:  0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 45%;
     color: white;
-    text-align: center;
-    padding: 10px 50px 10px 50px;
+    padding: 35px 50px 35px 50px;
+}
+
+.results h3 {
+    color: hsl(241, 100%, 89%);
 }
 
 .circle {
     background-image: linear-gradient(
         hsla(256, 72%, 46%, 1), 
         hsla(241, 72%, 46%, 0));
-    
-    /* circle size and shape */
     border-radius: 100%;
-    width: 178px;
-    height: 178px;
-    
-    /* center aligned with text align */
-    display: inline-block;
-
-    /* base position for elements */
-    position: relative;
-    
-    /* adjustments */
-    margin-top: 10px;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 20px 0;
 }
 
-/* centers div inside circle div */
-.circle div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#score, .circle p {
-    /* removes margin and padding in circle elements*/
-    margin: 0;
-    padding: 0;
-}
-
-/* ----------- text color and size adjustments -------------- */
-.details p, #result-title {
-    color: hsl(241, 100%, 89%);
-}
-
-.circle p {
-    color: rgba(200, 199, 255, 0.678);
+.circle h1 {
+    font-size: 3.6em;
 }
 
 .circle p, .details p {
     font-size: 0.9em;
-}
-#rating {
-    font-size: 1.6em;
-    margin-bottom: 5px;
+    color: hsl(241, 100%, 89%);
 }
 
-#score {
-    /* sets size of result score */
-    font-size: 3.7em;
+.circle p {
+    opacity: 0.6;
 }
-/* ----------------------------------------------------------- */
 
+.details {
+    text-align: center;
+}
 
-
-/* SUMMARY SIDE */
+.details p {
+    margin-top: 10px;
+}
 
 .summaries {
-    /* sets all elements to same size */
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 35px 35px 35px 35px;
+    flex-basis: 55%;
+}
 
-    /* sets padding */
-    padding: 10px 35px 10px 35px;
+.summaries h3 {
+    margin-bottom: 25px;
 }
 
 .category {
-    /* sets size and corner of divs */
     border-radius: 10px;
-    height: 50px;
-    margin-bottom: 15px;
-
-    /* arranges elements horizontally */
     display: flex;
-    flex-direction: row;
-
-    /* puts elements to the end of each side */
     justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
 }
 
-.category div {
-    /* arranges elements horizontally */
+.category, .category div {
     display: flex;
     flex-direction: row;
 }
 
-/* colors of each category */
+.category img {
+    width: 18px;
+    margin: 0 11px 0 0;
+}
+
+.summaries h3, .scores {
+    color: hsl(224, 30%, 27%);
+}
+
+.items {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.scores {
+    margin-right: 3px;
+}
+
+.scores, .items {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
 .reaction {
     color: hsl(0, 100%, 67%);
     background-color: hsla(0, 100%, 67%, 0.082);
@@ -164,74 +145,48 @@ footer {
     background-color: hsl(234, 85%, 45%, 0.082);
 }
 
-/* ------- adjustments ------- */
-#summary-title, .scores {
-    color: hsl(224, 30%, 27%);
-}
-
-.items {
-    color: hsla(224, 30%, 27%, 0.5);
-}
-
-.scores {
-    margin-right: 3px;
-}
-
-.scores, .items {
-    font-size: 0.9em;
-    font-weight: 700;
-}
-
-#summary-title {
-    margin-bottom: 25px;
-}
-
-.summary-half p {
-    position: absolute;
-    right: 15px;
-}
-
-.summaries img {
-    margin: 0 11px 0 13px;
-}
-
-.category h3 {
-    margin: 15px 0 0 0;
-    font-size: 0.9em;
-}
-
-.summary-scores {
-    margin: 15px 15px 0 0;
-    font-size: 0.9em;
-}
-
-.reaction p, .memory p, .verbal p, .visual p {
-    margin: 13px 15px 0 0;
-}
-/* ---------------------------- */
-
 .continue-btn {
     background-color: hsl(224, 30%, 27%);
-    text-align: center;
     color: white;
-    cursor: pointer;
-    padding: 15px 0 15px 0;
-    border-radius: 25px;
-    text-decoration: none;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
     margin-top: 20px;
     font-size: 0.9em;
+    cursor: pointer;
 }
 
-.continue-btn:hover, .continue-btn:focus {
+.continue-btn:hover {
     background-image: linear-gradient(
         hsl(252, 100%, 67%),
         hsl(241, 81%, 54%));
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    padding: 15px 0 15px 0;
-    border-radius: 25px;
-    text-decoration: none;
-    margin-top: 20px;
-    font-size: 0.9em;
+}
+
+@media (min-width: 660px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        flex-direction: row;
+        box-shadow: 10px 20px 45px hsl(221, 100%, 96%);
+        border-radius: 30px;
+        width: 652px;
+        height: 453px;
+    }
+
+    .results {
+        border-radius: 30px;
+    }
+
+    .results, .summaries {
+        flex-basis: 50%;
+    }
+
+    .circle {
+        width: 178px;
+        height: 178px;
+    }
 }

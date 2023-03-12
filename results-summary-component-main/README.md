@@ -11,7 +11,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [Questions](#questions)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -26,13 +26,16 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
+- Desktop  
+![results summary component desktop](screenshots/web-ss.png)
 
-![results summary component](screenshots/results-summary-component.png)
+- Mobile  
+![results summary component mobile](screenshots/mobile-ss.png)
 
 ### Links
 
 - Solution URL: [github repository](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/results-summary-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://results-summary-componenet-ivydev.netlify.app/)
 
 ## My process
 
@@ -43,34 +46,36 @@ Users should be able to:
 
 ### What I learned
 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- I learned how to apply display: flex and other flex properties on html elements.
+- Always place Media queries at the end
+- Always add this code to reset margin, padding, set font size and family, and height of body and main element.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* The font size */
+    /* font family */
+}
+
+main {
+    min-height: inherit;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Questions
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Did I use flex properly? I feel like I overused it.
+- How do I link json file to js file then to html file?
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) by Zach Goller](https://www.youtube.com/watch?v=zJSY8tbf_ys) - Helped me understand the basic css properties along with examples and challenges that made it easy for me to understand style and layout concepts such as flex.
 
 ## Author
 
