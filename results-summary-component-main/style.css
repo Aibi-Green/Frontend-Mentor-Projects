@@ -33,7 +33,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex-basis: 45%;
+    /* flex-basis: 45%; */
     color: white;
     padding: 35px 50px 35px 50px;
 }
@@ -82,7 +82,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     padding: 35px 35px 35px 35px;
-    flex-basis: 55%;
+    /* flex-basis: 55%; */
 }
 
 .summaries h3 {

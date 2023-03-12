@@ -1,84 +1,74 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+*, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    height: 100vh;
-    background-color: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
     font-size: 14px;
-}
-
-footer {
-    background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
-    height: inherit;
-
-    /* centers card horizontally and vertically */
+    background-color: hsl(30, 38%, 92%);
+    min-height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* ------------------------------------------- */
+
 .card {
-    /* sets card width */
-    width: 720px;
-    height: 540px;
-    /* arranges items in a row(default) */
-    display: flex;
-    border-radius: 10px;
-
-    /* temp */
     background-color: white;
-}
+    border-radius: 10px;
+    overflow: hidden;
 
-.product-img-container, .product-details-container {
-    /* Is flex basis a good solution for evenly distributing width to each div? */
-    /* splits card width evenly to the two child div */
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+
+    width: 337px;
+    height: 610px;
 }
 
 .product-img-container img {
-    /* sets img size based on parent container size */
-    width: 100%;
-    border-radius: 10px 0 0 10px;
+    max-width: 100%;
 }
 
 .product-details-container {
-    padding: 40px;
-    
-    /* sets button width the same as its siblings */
     display: flex;
     flex-direction: column;
+    padding: 21px 25px 25px 25px;
 }
 
 .product {
+    font-size: 0.9em;
     letter-spacing: 0.5em;
 }
 
 .product-details-container h1 {
     font-family: 'Fraunces', serif;
-    font-size: 2.4rem;
+    font-size: 1.9rem;
+    font-weight: 700;
     line-height: 1em;
-    margin: 25px 0 28px 0;
+    margin: 15px 0 15px 0;
     color: hsl(212, 21%, 14%)
 }
 
-.information {
-    font-size: 1.2em;
+p.information {
     line-height: 1.6em;
 }
 
 .product-details-container p, .old-price {
     color: hsl(228, 12%, 48%);
+    font-size: 1em;
 }
 
 .prices {
-    margin: 30px 0 30px 0;
+    margin: 15px 0 15px 0;
     display: flex;
     align-items: center;
 }
@@ -92,26 +82,74 @@ main {
 .old-price {
     text-decoration: line-through;
     margin-left: 20px;
-    font-size: 1.1em;
 }
 
 .add-to-cart {
     background-color: hsl(158, 36%, 37%);
     color: white;
-    text-decoration: none;
-
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 1.2em;
-    font-weight: 700;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .add-to-cart img {
-    width: 18px;
+    width: 14px;
     margin-right: 15px;
 }
 
+.add-to-cart:hover {
+    background-color: hsl(159, 36%, 17%);
+    cursor: pointer;
+}
+
+@media (min-width: 770px) {
+    .card {
+        flex-direction: row;
+        width: 720px;
+        height: 540px;
+    }
+
+    .product-img-container, .product-details-container {
+        flex-basis: 50%;
+    }
+
+    .product-img-container {
+        content: url("./images/image-product-desktop.jpg");
+    }
+
+    .product-details-container {
+        padding: 35px;
+    }
+
+    .product {
+        font-size: 1em;
+    }
+    
+    .product-details-container h1 {
+        font-size: 2.4rem;
+        margin: 25px 0 28px 0;
+    }
+    
+    p.information {
+        font-size: 1.2em;
+    }
+
+    .prices {
+        margin: 35px 0 35px 0;
+    }
+
+    .add-to-cart {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    .add-to-cart img {
+        width: 18px;
+    }
+}

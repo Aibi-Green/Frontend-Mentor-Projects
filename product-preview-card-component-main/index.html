@@ -6,26 +6,18 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
-  </style>
 
   <title>Product preview card component</title>
 
-  <style>
-    footer { font-size: 11px; text-align: center; }
-    footer a { color: hsl(158, 36%, 37%); }
-  </style>
 </head>
 <body>
 
   <main>
     <div class="card">
       <div class="product-img-container">
-        <img src="images/image-product-desktop.jpg" alt="image-product">
+        <img src="images/image-product-mobile.jpg" alt="image-product">
       </div>
       <div class="product-details-container">
-        <!-- can i use span without p tag? what si the convention? -->
         <p><span class="product">PERFUME</span></p>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p class="information">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
@@ -34,18 +26,10 @@
           <span class="current-price">$149.99</span>
           <span class="old-price">$169.99</span>
         </div>
-        <a href="###" class="add-to-cart">
-          <img src="images/icon-cart.svg" alt="icon-cart">
-          Add to Cart
-        </a>
+        <button class="add-to-cart"><img src="./images/icon-cart.svg" alt="icon-cart"> Add to Cart</button>
       </div>
     </div>
   </main>
-
-  <footer class="attribution">
-    <br>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/product-preview-card-component-main">Ivy Lariosa</a>.<br><br>
-  </footer>
 
 </body>
 </html>
