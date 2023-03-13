@@ -1,0 +1,201 @@
+:root {
+    --clr-pri-orange: hsl(25, 97%, 53%);
+    
+    --clr-neu-white: hsl(0, 0%, 100%);
+    --clr-neu-light-grey: hsl(217, 12%, 63%);
+    --clr-neu-light-grey2: hsla(217, 12%, 63%, 0.096);
+    --clr-neu-medium-grey: hsl(216, 12%, 54%);
+    --clr-neu-dark-blue: hsl(213, 19%, 18%);
+    --clr-neu-dark-blue2: hsl(213, 18%, 12%);
+    --clr-neu-very-dark-blue: hsl(216, 12%, 8%);
+
+    --ff-accent: "Fraunces", serif;
+    --ff-base: "Montserrat", sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* intuitive box sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* remove default margin */
+* {
+    margin: 0;
+}
+
+/* allows percentage-based heights in the application */
+html,
+body {
+    height: 100%;
+}
+
+/* Typographic Tweaks
+    add accesible line-height
+    improve text rendering
+*/
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* remove built in form typography styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*  avoid text overflows */
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+/* general styling */
+
+body {
+    background-color: var(--clr-neu-very-dark-blue);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* chagne later */
+    background-image: linear-gradient(var(--clr-neu-dark-blue), var(--clr-neu-dark-blue2));
+    /* background-color: var(--clr-neu-dark-blue); */
+    color: var(--clr-neu-white);
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+    width: 88%;
+    border-radius: 15px;
+}
+
+.star-container {
+    /* change later */
+    background-color: var(--clr-neu-light-grey2);
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-container img {
+    width: 14px;
+    height: auto;
+    margin-left: 1px;
+}
+
+.card h3 {
+    margin: 25px 0 15px 0;
+    font-size: 1.4em;
+}
+
+.card p {
+    color: var(--clr-neu-light-grey);
+    font-weight: 700;
+    font-size: 0.78em;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 25px 0;
+}
+
+.rating button {
+    /* change later */
+    border: none;
+    background-color: var(--clr-neu-light-grey2); 
+    color: var(--clr-neu-light-grey);
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    font-size: 0.9em;
+}
+
+.rating button:active {
+    background-color: var(--clr-pri-orange);
+    cursor: pointer;
+    color: var(--clr-neu-white);
+}
+
+.submit {
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--clr-pri-orange);
+    padding: 10px;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.submit:active {
+    color: var(--clr-pri-orange);
+    background-color: var(--clr-neu-white);
+    cursor: pointer;
+}
+
+@media (min-width: 380px) {
+    .card {
+        padding: 30px;
+        width: 380px;
+        border-radius: 30px;
+    }
+
+    .rating button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .rating button:hover {
+        background-color: var(--clr-pri-orange);
+        cursor: pointer;
+        color: var(--clr-neu-white);
+    }
+
+    .submit:hover {
+        color: var(--clr-pri-orange);
+        background-color: var(--clr-neu-white);
+        cursor: pointer;
+    }
+}
+

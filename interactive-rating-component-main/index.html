@@ -5,45 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
+    rel="stylesheet">
   
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Interactive rating component</title>
 </head>
 <body>
+  <div class="card">
+    <div class="star-container">
+      <img src="./images/icon-star.svg" alt="icon-star">
+    </div>
+    <h3>How did we do?</h3>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rating">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
 
+      <!-- <div>
+        <input type="radio" id="rating-1" name="rating-num" value="1">
+        <label for="rating-1">1</label>
+      </div>
+      <div>
+        <input type="radio" id="rating-2" name="rating-num" value="2">
+        <label for="rating-2">2</label>
+      </div>
+      <div>
+        <input type="radio" id="rating-3" name="rating-num" value="3">
+        <label for="rating-3">3</label>
+      </div>
+      <div>
+        <input type="radio" id="rating-4" name="rating-num" value="4">
+        <label for="rating-4">4</label>
+      </div>
+      <div>
+        <input type="radio" id="rating-5" name="rating-num" value="5">
+        <label for="rating-5">5</label>
+      </div> -->
+    </div>
+    <button class="submit">SUBMIT</button>
+  </div>
   <!-- Rating state start -->
 
-  How did we do?
+  <!-- How did we do?
 
   Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!
 
   1 2 3 4 5
 
-  Submit
+  Submit -->
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <!-- You selected -- Add rating here -- out of 5 -->
 
-  Thank you!
+  <!-- Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  don’t hesitate to get in touch! -->
 
   <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
