@@ -59,7 +59,7 @@ Javascript
 ```js
 element.addEventListener("click", function);
 ```
-- Adding or removing a class for styling an element
+- Adding or removing a class for styling an element (does not change hover and active states)
 ```js
 child.classList.add("selected");
 child.classList.remove("selected");
