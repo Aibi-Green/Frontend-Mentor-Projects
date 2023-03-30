@@ -5,6 +5,7 @@
     --cyan: hsl(178, 100%, 50%);
 
     --vdb-main-bg: hsl(217, 54%, 11%);
+    --vdb-card-shadow: hsl(214, 56%, 8%);
     --vdb-card-bg: hsl(216, 50%, 16%);
     --vdb-line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
@@ -46,6 +47,12 @@ img {
     display: block;
 }
 
+html, body {
+    height: 100%;
+}
+
+/* --------------------------------------------------------- */
+/* website specific customs */
 a {
     text-decoration: none;
     color: inherit;
@@ -53,6 +60,7 @@ a {
 
 a:hover {
     color: var(--cyan);
+    transition: 0.3s;
 }
 
 hr {
@@ -61,9 +69,7 @@ hr {
     border: none;
 }
 
-html, body {
-    height: 100%;
-}
+/* --------------------------------------------------------- */
 
 body {
     font-family: 'Outfit', sans-serif;
@@ -86,13 +92,14 @@ h2, .creator {
     flex-direction: column;
     border-radius: 15px;
     padding: 23px;
+    box-shadow: 5px 30px 50px var(--vdb-card-shadow);
 }
 
 .card .nft-img-div {
     position: relative;
-    background-color: var(--cyan);
     border-radius: 10px;
     overflow: hidden;
+    background-color: var(--vdb-card-bg);
 }
 
 .view {
@@ -106,10 +113,17 @@ h2, .creator {
 
 .card .nft-img:hover {
     opacity: 0.6;
+    transition: 0.5s ease;
+}
+
+.nft-img-div:hover {
+    transition: 0.5s ease;
+    background-color: var(--cyan);
 }
 
 .nft-img-div:hover .view{
     opacity: 1;
+    transition: 0.5s ease;
 }
 
 .card-descript-div {
