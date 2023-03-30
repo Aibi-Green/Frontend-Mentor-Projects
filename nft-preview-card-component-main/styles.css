@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --vdb-main-bg: hsl(217, 54%, 11%);
+    --vdb-card-bg: hsl(216, 50%, 16%);
+    --vdb-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --300: 300;
+    --400: 400;
+    --600: 600;
+}
+
+.thin {
+    font-weight: var(--300);
+}
+
+.regular {
+    font-weight: var(--400);
+}
+
+.bold {
+    font-weight: var(--600);
+}
+
+/* --------------------------------------------------------- */
+/* make better defaults */
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -7,7 +37,130 @@
     padding: 0;
 }
 
+p {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+hr {
+    height: 1px;
+    background-color: var(--vdb-line);
+    border: none;
+}
+
 html, body {
     height: 100%;
-    background-color: antiquewhite;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--vdb-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-blue);
+}
+
+h2, .creator {
+    color: var(--white);
+}
+
+.card {
+    background-color: var(--vdb-card-bg);
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 23px;
+}
+
+.card .nft-img-div {
+    position: relative;
+    background-color: var(--cyan);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.card .nft-img:hover {
+    opacity: 0.6;
+}
+
+.nft-img-div:hover .view{
+    opacity: 1;
+}
+
+.card-descript-div {
+    margin-top: 23px;
+}
+
+.currency-div, .daysleft-div, .currency-daysleft-div, .creator-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.currency-daysleft-div {
+    justify-content: space-between;
+}
+
+.currency {
+    color: var(--cyan);
+}
+
+.image-avatar {
+    width: 35px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+.card-descript-div > * {
+    margin-bottom: 15px;
+}
+
+.card .creator-div {
+    margin-bottom: 0px;
+}
+
+.descript {
+    line-height: 1.5em;
+}
+
+.currency, .daysleft {
+    margin-left: 5px;
+}
+
+.image-avatar {
+    margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+    }
+    .card {
+        width: 350px;
+    }
 }
