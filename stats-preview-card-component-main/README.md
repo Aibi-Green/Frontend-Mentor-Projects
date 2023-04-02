@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/stats-preview-card-component-main/stats-preview-card-component-main)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://stats-preview-card-component-ivydev.netlify.app/)
 
 ## My process
 
