@@ -9,3 +9,4 @@ A collection of all my solutions to Frontend Mentor Challenges during my 3rd yea
 | HTML, CSS | Interactive Rating component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/interactive-rating-component-main) | [Live](https://interactive-rating-ivydev.netlify.app/) | Free |
 | HTML, CSS | NFT preview card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/nft-preview-card-component-main) | [Live](https://nft-preview-card-component-ivydev.netlify.app/) | Free |
 | HTML, CSS | Order Summary component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/order-summary-component-main) | [Live](https://order-summary-component-ivydev.netlify.app/) | Free |
+| HTML, CSS | Stats Preview Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/stats-preview-card-component-main) | [Live](https://stats-preview-card-component-ivydev.netlify.app/) | Free |
