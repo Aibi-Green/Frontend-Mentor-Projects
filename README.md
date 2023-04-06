@@ -4,10 +4,10 @@ A collection of all my solutions to Frontend Mentor Challenges during my 3rd yea
 | Tags | Challenges | Code | Live | Type |
 | --- | --- | --- | --- | --- |
 | HTML, CSS | QR Code component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/qr-code-component-main) | [Live](https://qr-code-component-main-ivydev.netlify.app/) | Free |
-| HTML, CSS | Results Summary component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/results-summary-component-main) | [Live](https://results-summary-componenet-ivydev.netlify.app/) | Free |
+| HTML, CSS, JS | Results Summary component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/results-summary-component-main) | [Live](https://results-summary-componenet-ivydev.netlify.app/) | Free |
 | HTML, CSS | Product Preview Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/product-preview-card-component-main) | [Live](https://product-preview-card-ivydev.netlify.app/) | Free |
-| HTML, CSS | Interactive Rating component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/interactive-rating-component-main) | [Live](https://interactive-rating-ivydev.netlify.app/) | Free |
+| HTML, CSS, JS | Interactive Rating component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/interactive-rating-component-main) | [Live](https://interactive-rating-ivydev.netlify.app/) | Free |
 | HTML, CSS | NFT preview card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/nft-preview-card-component-main) | [Live](https://nft-preview-card-component-ivydev.netlify.app/) | Free |
 | HTML, CSS | Order Summary component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/order-summary-component-main) | [Live](https://order-summary-component-ivydev.netlify.app/) | Free |
-| HTML, CSS | Stats Preview Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/stats-preview-card-component-main) | [Live](https://stats-preview-card-component-ivydev.netlify.app/) | Free |
+| HTML, CSS, JS | Stats Preview Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/stats-preview-card-component-main) | [Live](https://stats-preview-card-component-ivydev.netlify.app/) | Free |
 | HTML, CSS | 3-column preview Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/3-column-preview-card-component-main) | [Live](https://3-column-preview-card-ivydev.netlify.app/) | Free |
