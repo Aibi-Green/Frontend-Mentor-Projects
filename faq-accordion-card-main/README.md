@@ -10,7 +10,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -30,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [code](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/faq-accordion-card-main)
+- Live Site URL: [live site](https://faq-accordion-card-main-ivydev.netlify.app)
 
 ## My process
 
@@ -41,10 +40,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-- 
 
 ## Author
 

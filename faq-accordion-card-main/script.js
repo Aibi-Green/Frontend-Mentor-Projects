@@ -6,6 +6,10 @@ let faqQuestAnswers = {
     addSupport: ["Do you provide additional support?", "Chat and email support is available 24/7. Phone lines are open during normal business hours."]
 };
 
+// import faqQuestAnswers from './QA.json' assert {type:'json'};
+
+// console.log(faqQuestAnswers);
+
 let questCont = document.getElementById('questions-container');
 
 function fillFAQ (qa) {
@@ -52,27 +56,24 @@ Array.from(details).forEach((child) => {
     child.addEventListener("toggle", detailClick);
 });
 
-const mobileImg = "./images/illustration-woman-online-mobile.svg";
 const desktopImg = "./images/illustration-woman-online-desktop.svg";
-const mobileShad = "./images/bg-pattern-mobile.svg";
 const desktopShad = "./images/bg-pattern-desktop.svg";
-const boxImg = "./images/illustration-box-desktop.svg";
 
 const box = document.querySelector("img.box");
 const cardImg = document.querySelector("img.card-img");
 const shadow = document.querySelector("img.shadow");
+const card = document.querySelector("div.card");
 
 function changeImg(x) {
     if(x.matches){
-        cardImg.src = desktopImg;
-        shadow.src = desktopShad;
-        box.src = boxImg;
+        cardImg.classList.add("hidden");
+        shadow.classList.add("hidden");
         box.classList.remove("hidden");
     } else {
-        cardImg.src = mobileImg;
-        shadow.src = mobileShad;
-        box.src = "";
+        cardImg.classList.remove("hidden");
+        shadow.classList.remove("hidden");
         box.classList.add("hidden");
+        card
     }
 }
 
