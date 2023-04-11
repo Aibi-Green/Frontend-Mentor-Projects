@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    /* primary */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+
+    /* Neutral */
+
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* Gradients */
+
+    /* Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+    /* Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
+    --font-family: 'Josefin Sans', sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+p {
+    font-size: 14px;
+    color: var(--desaturated-red);
+    line-height: 1.6em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+header img {
+    height: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.thin {
+    font-weight: 300;
+    color: var(--desaturated-red);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.right img{
+    height: 30vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.left {
+    padding: 9vh 4vh;
+}
+
+.content {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 30px;
+}
+
+input, button {
+    border-radius: 30px;
+}
+
+input {
+    padding: 15px 20px;
+    font-family: var(--font-family);
+    border: 1px solid var(--desaturated-red);
+}
+
+input::placeholder {
+    color: var(--desaturated-red);
+}
+
+form button {
+    position: absolute;
+    right: 0;
+    border: none;
+    width: 60px;
+    height: 46px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
