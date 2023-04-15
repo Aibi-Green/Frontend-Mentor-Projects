@@ -11,23 +11,26 @@
 </head>
 <body>
   <header>
-    <img src="./images/logo.svg" alt="logo">
+    <img class="header-logo" src="./images/logo.svg" alt="logo">
   </header>
   <main>
     <div class="right">
-      <img src="./images/hero-mobile.jpg" alt="hero-mobile">
+      <img class="web-image" src="">
     </div>
     <div class="left">
       <div class="content">
-          <h1><span class="thin">We're</span><br>Coming<br>Soon</h1>
+        <img class="body-logo" src="./images/logo.svg" alt="logo">
+        <h1><span class="thin">We're</span><br>Coming<br>Soon</h1>
         <p>
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
         <form action="./index.html">
-          <input id="email-field" type="email" placeholder="Email Address"/>
+          <input id="email-field" type="email" name="email" placeholder="Email Address"/>
+          <img class="icon-error" src="./images/icon-error.svg" alt="icon-error">
           <button id="send-btn">
             <img src="./images/icon-arrow.svg" alt="arrow">
           </button>
+          <span class="error"></span>
         </form>
       </div>
     </div>
@@ -35,4 +38,5 @@
   </main>
 
 </body>
+<script src="./script.js"></script>
 </html>
