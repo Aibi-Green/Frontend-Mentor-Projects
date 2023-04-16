@@ -13,4 +13,4 @@ A collection of all my solutions to Frontend Mentor Challenges during my 3rd yea
 | HTML, CSS | 3-column Preview Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/3-column-preview-card-component-main) | [Live](https://3-column-preview-card-ivydev.netlify.app/) | Free |
 | HTML, CSS | Profile Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/profile-card-component-main) | [Live](https://profile-card-component-ivydev.netlify.app/) | Free |
 | HTML, CSS, JS | FAQ Accordion Card component | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/faq-accordion-card-main) | [Live](https://faq-accordion-card-main-ivydev.netlify.app) | Free |
-| HTML, CSS, JS | FAQ Accordion Card component | [Code]() | [Live]() | Free |
+| HTML, CSS, JS | Base Apparel Coming Soon page | [Code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/base-apparel-coming-soon-master) | [Live](https://base-apparel-coming-soon-ivydev.netlify.app/) | Free |

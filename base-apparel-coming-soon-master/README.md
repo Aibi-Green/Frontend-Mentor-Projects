@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel coming soon page solution
 
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
 
 ## Table of contents
 
@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [code]()
-- Live Site URL: [site]()
+- Solution URL: [code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/base-apparel-coming-soon-master)
+- Live Site URL: [site](https://base-apparel-coming-soon-ivydev.netlify.app/)
 
 ## My process
 
@@ -41,7 +41,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ## Author
