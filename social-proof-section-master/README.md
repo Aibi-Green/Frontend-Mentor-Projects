@@ -10,7 +10,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -28,22 +27,16 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [code]()
-- Live Site URL: [live]()
+- Solution URL: [code](https://github.com/Aibi-Green/Frontend-Mentor-Projects/tree/main/social-proof-section-master)
+- Live Site URL: [live](https://social-proof-section-master-ivydev.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-
 
 ## Author
 
