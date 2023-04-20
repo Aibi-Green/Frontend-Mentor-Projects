@@ -17,7 +17,11 @@
 }
 
 html, body {
-    min-height: 100%;
+    min-height: 100vh;
+}
+
+main {
+    min-height: inherit;
 }
 
 body {
@@ -36,6 +40,12 @@ img {
 }
 
 /* ------------------ */
+body {
+    background:
+    url(./images/bg-pattern-top-mobile.svg) no-repeat top,
+    url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom;
+}
+
 main {
     padding: 80px 20px;
     display: flex;
@@ -58,7 +68,7 @@ h1 {
     text-align: center;
 }
 
-.review-details:nth-child(1) p {
+.details p {
     color: var(--dark-grayish-magenta);
 }
 
@@ -76,6 +86,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     font-weight: 700;
+    font-size: 18.2px;
     color: var(--very-dark-magenta);
 }
 
@@ -120,4 +131,76 @@ h1 {
     border-radius: 100%;
     width: 40px;
     height: 40px;
+}
+
+@media (min-width: 1110px) {
+    body {
+        background:
+        url(./images/bg-pattern-top-desktop.svg) 0% 0% no-repeat,
+        url(./images/bg-pattern-bottom-desktop.svg) 100% 100% no-repeat;
+    }
+
+    main {
+        padding: 115px 165px;
+        row-gap: 80px;
+    }
+
+    .review-details {
+        flex-direction: row;
+    }
+
+    .review-details > div {
+        flex-basis: 50%;
+    }
+
+    .details {
+        text-align: left;
+        padding-right: 100px;
+    }
+
+    .details h1 {
+        font-size: 3.7rem;
+        letter-spacing: -3px;
+    }
+
+    .star-ratings {
+        justify-content: center;
+        align-items: flex-end;
+        
+    }
+
+    .grey-box:nth-child(1) {
+        transform: translateX(-20%);
+    }
+
+    .grey-box:nth-child(2) {
+        transform: translateX(-10%);
+    }
+
+    .grey-box {
+        flex-direction: row;
+        width: 445px;
+        padding: 20px 30px;
+    }
+
+    .stars {
+        margin-right: 30px;
+    }
+
+    .comments {
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    .violet-box {
+        padding: 40px 30px 40px 30px;
+    }
+
+    .violet-box:nth-child(2) {
+        transform: translateY(5%);
+    }
+
+    .violet-box:nth-child(3) {
+        transform: translateY(10%);
+    }
 }
